@@ -143,6 +143,8 @@ function endGame() {
   // clearInterval(gameInterval);
   stopTheGame();
 
+  ROCKS.forEach(rock => rock.remove())
+
   var rcks = document.querySelectorAll('.rock')
   for (let i = 0; i < rcks.length; i++) {
     var rck = rcks[i]
